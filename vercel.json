@@ -12,7 +12,7 @@
       "config": { "distDir": "dist" }
     },
     {
-      "src": "webpack.config.js",
+      "src": "webpack.config.prod.js",
       "use": "@vercel/node",
       "config": { "maxLambdaSize": "10mb" }
     }
