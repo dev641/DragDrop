@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/app.ts"
+    }
+  ],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
+    {
+      "src": "webpack.config.js",
+      "use": "@vercel/node",
+      "config": { "maxLambdaSize": "10mb" }
+    }
+  ]
+}
