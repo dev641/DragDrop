@@ -18,6 +18,6 @@
       "use": "@vercel/webpack"
     }
   ],
-  "output":"/(.*)"
+  "outputDirectory":"/(.*)"
   
 }
