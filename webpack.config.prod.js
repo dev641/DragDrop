@@ -1,5 +1,6 @@
 const path = require("path");
 const cleanPlugin = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: "production",
@@ -35,5 +36,11 @@ module.exports = {
       filename: 'index.html',
       inject:'head',
       scriptLoading: 'defer',
-    })],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './app.css', to: 'app.css' },
+      ],
+    }),
+  ],
 };
