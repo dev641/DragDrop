@@ -17,6 +17,7 @@
       "src": "webpack.config.js",
       "use": "@vercel/webpack"
     }
-  ]
-  
+
+  ],
+  "output":"/(.*)" 
 }
