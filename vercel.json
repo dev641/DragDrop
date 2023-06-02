@@ -6,5 +6,6 @@
       "dest": "src/app.ts"
     }
   ],
+  "buildCommand":"npm run build",
 }
 
