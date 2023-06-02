@@ -9,11 +9,14 @@
   "builds": [
     {
       "src": "webpack.config.prod.js",
-      "use": "@vercel/webpack"
+      "use": "@vercel/node",
+      "config": {"maxLambdaSize":"15mb"},
+      "output": "/(.*)"
     },
     {
       "src": "webpack.config.js",
       "use": "@vercel/webpack"
     }
   ]
+  
 }
